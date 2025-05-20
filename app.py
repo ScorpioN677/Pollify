@@ -30,5 +30,5 @@ def chat():
     response = tokenizer.decode(output[0], skip_special_tokens=True)
     return jsonify({"response": response})
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)

@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 import torch
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 # Load model & tokenizer once at startup
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
